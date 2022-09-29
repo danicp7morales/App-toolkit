@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import axios from 'axios';
 
-//esto slice es un reducer llamado userSlice
+//esto slice es un reducer llamado userSlice lo exportamos para mandarselo al reducer general que 
+//esta en el store
 export const userSlice= createSlice({
-    name: 'users',
+    name: 'users',//el nombre de mi slice reducer
     initialState:{
         list:[]
     },
